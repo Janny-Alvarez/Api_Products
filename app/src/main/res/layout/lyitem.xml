@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- imagen -->
+    <ImageView
+        android:id="@+id/imgUsr"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagen del producto" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp">
+
+        <!-- categoría -->
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: men's clothing"
+            android:textColor="#D32F2F"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <!-- título -->
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Titulo del producto"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <!-- precio -->
+        <TextView
+            android:id="@+id/lblweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 109.95"
+            android:textSize="13sp"
+            android:textColor="#000000" />
+
+        <!-- descripción -->
+        <TextView
+            android:id="@+id/lblDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".."
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:maxLines="3"
+            android:ellipsize="end" />
+    </LinearLayout>
+</LinearLayout>
